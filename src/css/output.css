@@ -1039,6 +1039,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -1299,6 +1303,10 @@ body{
     width: max-content;
   }
 
+  .lg\:w-\[15rem\]{
+    width: 15rem;
+  }
+
   .lg\:scale-100{
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -1384,5 +1392,9 @@ body{
 
   .lg\:font-extrabold{
     font-weight: 800;
+  }
+
+  .lg\:font-medium{
+    font-weight: 500;
   }
 }
