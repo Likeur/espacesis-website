@@ -10,250 +10,214 @@
 </head>
 <body class="w-screen overflow-x-hidden">
     
-    <main>
-        <header id="header" class="lg:container lg:mx-auto p-4 lg:p-6">
-            <div class=" text-gray-900 flex justify-between items-center">
-                <div class="flex flex-col lg:flex-row lg:items-center">
-                    <h1 id="logo" class="text-[1.5rem] lg:text-4xl lg:font-medium text-gray-900 flex items-center">
-                        <img src="./assets/images/espacesis.png" width="50" alt="">
-                        <span>Espac</span><span class="text-blue-600">esis.</span>
-                    </h1>
-                    <nav class="lg:ml-16 ">
-                        <ul id="menu" class="flex  h-max border lg:border-none left-5 lg:left-0 mt-5 lg:mt-0 rounded-3xl lg:h-max scale-0 lg:scale-100 duration-300 absolute z-40 bg-white w-[80vw] lg:w-max p-6 lg:p-0 lg:relative flex-col lg:flex-row">
-                            <li id="link1" class="lg:mt-0 lg:ml-5 text-lg"><a href="#header" class="block hover:text-blue-600 duration-300" >Acceuil</a></li>
-                            <li id="link2" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#project_section" class="block hover:text-blue-600 duration-300" >A propos</a></li>
-                            <li id="link3" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing" class="block hover:text-blue-600 duration-300" >Evénements</a></li>
-                            <li id="link4" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing" class="block hover:text-blue-600 duration-300" >Contacts</a></li>
-                        </ul>
-                    </nav>
+   
+    <main class="lg:w-[98vw]">
+       
+        <div id="mouse_follow" class="h-2 w-2 fixed bg-gray-950 rounded-full z-50 top-1 left-1"></div>
+        
+        <!-- header section -->
+        <header class="lg:h-screen w-full">
+            <section class="p-4 relative z-10 h-full w-full grid justify-between gap-4 lg:gap-6 lg:grid-cols-2">
+                <div class="flex flex-col justify-between h-full p-4">
+                    <div>
+                        <div class="flex items-center ">
+                            <img src="./assets/images/espacesis.png" width="50" alt="">
+                            <span class="text-xl">Espacesis</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2 class="text-3xl lg:text-5xl font-medium">Réjoins une communauté des jeunes passionnées des technologies</h2>
+                        </div>
+                        <div class="mt-8 flex flex-col lg:flex-row lg:justify-between">
+                            <p class=" lg:w-[50%]">viens faconner ton avenir technologique avec nous pour garantir ta carriere</p>
+                            <a href="" class="bg-gray-900 h-max text-white p-2 rounded-full px-4 flex items-center hover:scale-75 duration-300">Nous réjoindre <i class='bx bx-right-arrow-alt text-xl -rotate-45'></i></a>
+                        </div>
+                        <div class="mt-8 flex items-center">
+                            <div class="bg-gray-100 w-max p-4 rounded-3xl">
+                                <div class="flex">
+                                    <div class="h-9 w-9 ring-2 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/likeur.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                    <div class="h-9 w-9 ring-2 -ml-3 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/mmc.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                    <div class="h-9 w-9 ring-2 -ml-3 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/glo.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="mt-2 text-xl font-semibold">200+</h3>
+                                <p class="font-thin">Membres</p>
+                            </div>
+                            <div class="bg-gray-100 ml-4 w-max p-4 rounded-3xl">
+                                <div class="flex">
+                                    <div class="h-9 w-9 ring-2 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/likeur.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                    <div class="h-9 w-9 ring-2 -ml-3 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/mmc.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                    <div class="h-9 w-9 ring-2 -ml-3 ring-white rounded-full overflow-hidden">
+                                        <img src="./assets/images/glo.jpg" class="w-full h-full object-cover" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="mt-2 text-xl font-semibold">20+</h3>
+                                <p class="font-thin">Evenements Techs</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="flex items-center">
-                    
-                    <a id="rdvbtn" href="" class="hidden text-center lg:flex items-center font-medium bg-blue-600 text-white p-2 px-4 lg:p-4 lg:px-7 rounded-full">
-                        <span>Nous Réjoindre</span>
-                        <i class='bx bx-right-arrow-alt ml-1 -rotate-45 text-xl'></i>
-                    </a>
-                    <button id="menubtn" title="toggle nav btn" class="lg:hidden ml-2 lg:ml-0 z-50 relative mr-4">
-                        <div id="bar-1" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300"></div>
-                        <div id="bar-2" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300 mt-2"></div>
-                    </button> 
+                <div class="flex justify-end">
+                    <div class="bg-stone-400 lg:w-[40vw] h-full rounded-3xl">
+                        <section class="p-4 flex justify-end">
+                            <button id="menu-open" class="bg-white hover:scale-75 duration-300 rounded-full h-12 w-12 p-2 flex flex-col items-end justify-center shadow-md">
+                                <div class="bg-gray-900 h-0.5 w-8"></div>
+                                <div class="bg-gray-900 h-0.5 w-6 mt-1"></div>
+                                <div class="bg-gray-900 h-0.5 w-4 mt-1"></div>
+                            </button>
+                            
+                        </section>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section id="wrapper" class="absolute bg-white/40 backdrop-blur-md top-0 left-0 z-0 h-screen w-screen"></section>
+            <nav id="navigation" class="absolute -translate-x-[1000rem] duration-300 overflow-hidden h-screen border-r flex flex-col justify-between rounded-r-[2rem] p-4 lg:p-6 shadow-lg lg:w-[30vw] z-50 top-0 left-0 bg-white">
+                <button id="menu-close" class="h-9 w-9 hover:scale-75 duration-300 bg-white relative border shadow-lg rounded-full flex justify-center items-center">
+                   <div>
+                        <div class="bg-gray-900 h-0.5 w-4 absolute rounded-full rotate-45"></div>
+                        <div class="bg-gray-900 h-0.5 w-4  rounded-full -rotate-45"></div>
+                   </div>
+                </button>
+                <ul class="p-4 text-2xl lg:text-3xl">
+                    <li><a href="" class="link flex group">Acceuil <div class="h-8 w-8 overflow-hidden"><i class='bx bx-right-arrow-alt scale-0 group-hover:scale-100 group-hover:-rotate-45 duration-300 text-2xl'></i></div> </a></li>
+                    <li><a href="" class="link flex mt-2 group">A propos <div class="h-8 w-8 overflow-hidden"><i class='bx bx-right-arrow-alt scale-0 group-hover:scale-100 group-hover:-rotate-45 duration-300 text-2xl'></i></div></a></li>
+                    <li><a href="" class="link flex mt-2 group">Core team <div class="h-8 w-8 overflow-hidden"><i class='bx bx-right-arrow-alt scale-0 group-hover:scale-100 group-hover:-rotate-45 duration-300 text-2xl'></i></div></a></li>
+                    <li><a href="" class="link flex mt-2 group">Evenements <div class="h-8 w-8 overflow-hidden"><i class='bx bx-right-arrow-alt scale-0 group-hover:scale-100 group-hover:-rotate-45 duration-300 text-2xl'></i></div></a> </li>
+                    <li><a href="" class="link flex mt-2 group">Contact <div class="h-8 w-8 overflow-hidden"><i class='bx bx-right-arrow-alt scale-0 group-hover:scale-100 group-hover:-rotate-45 duration-300 text-2xl'></i></div></a> </li>
+                </ul>
+                <div class="border-t">
+                    <div class="mt-4">
+                        <a href="" class="text-xl"><i class='bx bxl-linkedin'></i></a>
+                        <a href="" class="text-xl"><i class='bx bxl-whatsapp' ></i></a>
+                        <a href="" class="text-xl"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <!-- hero section -->
-        <section class="p-4 lg:p-6 lg:h-[100vh] lg:container lg:mx-auto">
-           <div class="grid gap-4 lg:gap-6 lg:grid-cols-2">
-                
-                <div class="">
-                    <div class="flex flex-col items-center lg:items-start text-4xl lg:text-7xl font-semibold">
-                        <h2 class="text-blue-600">Apprendre </h2>
-                        <h2 class="text-yellow-500">Se connecter</h2>
-                        <h2 class="text-green-600">Et Grandir</h2>
-                    </div>
-                    <div class="mt-8 flex">
-                        <p class="text-lg text-center lg:text-left text-gray-500 lg:w-[30vw]">Réjoins une communauté des jeunes passionnées des téchnologies, pour façonner ton avenir technologique</p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row mt-8 lg:items-center">
-                        <a id="rdvbtn" href="" class="flex justify-center text-center items-center font-medium bg-blue-600 text-white p-3 px-4 lg:p-4 lg:px-7 rounded-full">
-                            <span>Nous Réjoindre</span>
-                            <i class='bx bx-right-arrow-alt ml-1 -rotate-45 text-xl'></i>
-                        </a>
-                        <a href="" class="inline-block underline lg:ml-8 mt-4 text-center lg:mt-0">En savoir plus</a>
-                    </div>
+        <!-- pârtenaire section -->
+        <section class=" mt-8 lg:mt-20 p-4 lg:p-6">
+            <div class="flex flex-col items-center mb-8 lg:mb-20">
+                <div class="lg:w-[60vw]">
+                    <h2 class="text-center text-2xl lg:text-4xl">Nous sommes une communauté ouverte</h2>
+                    <h2 class="text-center text-2xl lg:text-4xl">Toujours à la quêtes des nouvelles opportunités ! </h2>
+                    <h2 class="text-center text-2xl lg:text-4xl">Voici nos partenaires</h2>
                 </div>
-                <div class="grid grid-cols-5 mt-8 mb-8 lg:mb-0 lg:mt-0">
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
-                    <div class=" overflow-hidden rounded-2xl"><img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt=""></div>
-                    <div class=" "></div>
+                <div class="mt-8 lg:mt-16 grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-5">
+                    <img src="./assets/images/auf.png" width="120" alt="">
+                    <img src="./assets/images/gdscudbl.png" width="120" alt="">
+                    <img src="./assets/images/sora.png" width="120" alt="">
+                    <img src="./assets/images/gdg.jpg" width="120" alt="">
+                    <img src="./assets/images/auf.png" width="120" alt="">
+                </div>
+
+                <div class="mt-8 lg:mt-16">
+                    <h2 class="lg:w-[20vw] text-center">Si vous voulez Dévenir partenaires , remplissez ce <a href="" class="underline">formulaire</a></h2>
                 </div>
             </div>
         </section>
 
-        <!-- Logo partenaire sections -->
-       <section class="mt-8 mb-8 lg:h-[30vh] flex flex-col justify-center"> 
+
+        <!-- About section -->
+        <section class="p-4 lg:h-[100vh] flex justify-center items-center lg:p-6">
+            <div class="grid gap-4 lg:gap-6 lg:grid-cols-2">
+                <div class="p-4 lg:p-6">
+                    <div>
+                        <h2 class="text-2xl lg:text-4xl">A propos de nous</h2>
+                        <div class="bg-gray-900 h-0.5 rounded-full mt-2 w-32"></div>
+                    </div>
+
+                    <div class="mt-8 p-4 lg:p-6">
+                        <h3 class="text-2xl">
+                            Espacesis est une communauté tech ayant  pour mission de rassembler les talents, et faire de ces talents des grands leaders informatique du pays, La vision du club ESPACESIS est d’être un lieu cible ou on puisera les meilleurs leaders en informatique.
+                        </h3>
+                    </div>
+                </div>
+                <div class="grid place-content-center ">
+                    <div class="h-full w-full  grid grid-cols-2 p-4 gap-4 lg:gap-6 lg:p-6 rounded-3xl">
+                        <div class="h-40 w-32 bg-gray-500 rounded-3xl  overflow-hidden"></div>
+                        <div class="h-40 w-32 bg-gray-500 mt-5 rounded-3xl overflow-hidden"></div>
+                        <div class="h-40 w-32 bg-gray-500 rounded-3xl overflow-hidden"></div>
+                        <div class="h-40 w-32 bg-gray-500 mt-5 rounded-3xl overflow-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core team section -->
+        <section class=" p-4 lg:p-6">
             <div>
-                <p class="text-xl text-center text-gray-500">Découvrez nos partenaires</p>
-            </div>
-            <section class="flex justify-center mt-8 p-4 lg:p-6">
-                <div class="grid gap-4 lg:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-                    <img src="./assets/images/auf.png" class="w-28 lg:w-40" alt="">
-                    <img src="./assets/images/gdscudbl.png" class="w-28 lg:w-44" alt="">
-                    <img src="./assets/images/gdg.jpg" class="w-28 lg:w-40" alt="">
-                    <img src="./assets/images/sora.png" class="w-28 lg:w-40" alt="">
-                    <img src="./assets/images/auf.png" class="w-28 lg:w-40" alt="">
+                <div class="flex flex-col items-center mb-8 lg:mb-20">
+                    <div class="lg:w-[60vw]">
+                        <h2 class="text-center text-2xl lg:text-4xl">Découvre l'équipe</h2>
+                        <h2 class="text-center text-2xl lg:text-4xl">
+                            Dérrière toute l'organisation du club
+                        </h2>
+                    </div>
+                    
                 </div>
-            </section>
+
+                <div>
+
+                </div>
+            </div>
         </section>
 
-        <!-- about section -->
-        <section class="lg:p-6">
-            <section class="lg:rounded-[5rem] lg:mr-5 mt-8 mb-8 p-4 lg:p-6 h-[80vh] lg:h-[100vh] flex justify-center items-center">
-                <div class="grid gap-4 lg:gap-6 lg:grid-cols-2 lg:w-[80vw]">
-                    <div>
-                        <h2 class="text-3xl text-center lg:text-left lg:w-[50%] lg:text-5xl font-bold text-gray-800">Découvre la communauté <span class="text-yellow-300">Espacesis</span></h2>
-                        <div class="mt-8 lg:mt-0 p-4 lg:p-6 rounded-3xl lg:mr-5">
-                            <h3 class="text-lg lg:text-2xl font-medium text-gray-700">
-                                Espacesis est une communauté tech ayant  pour mission de rassembler les talents, et faire de ces talents des grands leaders informatique du pays, La vision du club ESPACESIS est d’être un lieu cible ou on puisera les meilleurs leaders en informatique.
-                            </h3>
-                        </div>
-                    </div>
-                    
-                    <div>
+        <!-- event section -->
+        <section class=""></section>
 
-                    </div>
-                    
-                </div>
-            </section>
-        </section>
-
-        
-
-       <!-- team section -->
-       <section>
-            <div class="flex justify-center mb-8">
-                <h3 class="text-3xl lg:text-5xl font-bold text-center">Les membres de la <br> <span class="text-blue-600">coreTeam</span></h3>
-            </div>
-            <div class="mt-8 mb-8 flex justify-center">
-                <div class="grid lg:grid-cols-4 mr-2 lg:mr-0 gap-4 lg:gap-6">
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    <div id="slider_card" class="h-max ml-4 lg:w-[15rem] shrink-0 border grid rounded-3xl bg-white p-2">
-                        <div class="h-56 w-full overflow-hidden rounded-2xl">
-                            <img src="./assets/images/likeur.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-                        <div class="mt-2 p-2">
-                            <h1 class="font-semibold text-xl">Likeur off</h1>
-                            <p class="mt-2 text-gray-500">Frontend Developer</p>
-                        </div>
-                    </div>
-                    
-                   
-                   
-                </div>
-            </div>
-       </section>
-
-        <!-- last event section -->
+        <!-- Dernier CTA -->
         <section></section>
 
-        
-        <!-- CTA Section -->
-        <section class="p-4 flex flex-col justify-center lg:p-6 h-[70vh] lg:h-[80vh]">
-            <div class="flex mt-8 flex-col items-center text-4xl text-gray-800 lg:text-7xl font-bold">
-                <h2>Alors Excité à l'idée </h2>
-                <h2>de nous <span class="text-blue-600">réjoindre</span> ?</h2>
-            </div>
-            <div class="mt-8 flex justify-center">
-                <p class="text-center text-lg text-gray-500 lg:w-[40vw]">Réjoins une communauté des jeunes passionnées des téchnologies, pour façonner ton avenir technologique</p>
-            </div>
-            <div class="flex flex-col mb-8 lg:flex-row mt-8 lg:justify-center lg:items-center">
-                <a id="rejoindre2" href="" class="flex justify-center text-center items-center font-medium bg-blue-600 text-white p-3 px-4 lg:p-4 lg:px-7 rounded-full">
-                    <span>Nous Réjoindre</span>
-                    <i class='bx bx-right-arrow-alt ml-1 -rotate-45 text-xl'></i>
-                </a>
-            </div>
-        </section>
-
         <!-- footer -->
-        <footer class="lg:h-[60vh] relative flex items-center justify-center p-4 lg:p-6 bg-blue-600 ">
-
-            <div>
+        <footer class="lg:h-[50vh] bg-gray-100 p-4 flex flex-col justify-between items-center lg:p-6">
+            <div class="grid lg:grid-cols-3 lg:w-[80vw] gap-4 lg:gap-6">
+                <div class="flex items-center">
+                    <img src="./assets/images/espacesis.png" width="80" alt="">
+                    <h2 class="text-2xl">Espacesis</h2>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div>
+                        <h2 class="font-semibold">Liens utiles</h2>
+                        <div class="flex flex-col mt-5">
+                            <a href="">a propos</a>
+                            <a href="">Evenements</a>
+                            <a href="">Core team</a>
+                            <a href="">Contacts</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="flex justify-center">
-                    <nav class=" ">
-                        <ul id="menu" class="grid grid-cols-2 lg:grid-cols-4 gap-4 h-max text-white lg:p-0 ">
-                            <li id="link1" class="mt-1 lg:mt-0 lg:ml-5 text-lg"><a href="#header" class="block hover:text-yellow-400 duration-300" >Acceuil</a></li>
-                            <li id="link2" class="mt-1 lg:mt-0 lg:ml-5 text-lg"><a href="#project_section" class="block hover:text-yellow-400 duration-300" >A propos</a></li>
-                            <li id="link3" class="mt-1 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing" class="block hover:text-yellow-400 duration-300" >Evénements</a></li>
-                            <li id="link4" class="mt-1 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing" class="block hover:text-yellow-400 duration-300" >Contacts</a></li>
-                        </ul>
-                    </nav>
+                    <div>
+                        <h2 class="font-semibold">Liens utiles</h2>
+                        <div class="flex flex-col mt-5">
+                            <a href="">a propos</a>
+                            <a href="">Evenements</a>
+                            <a href="">Core team</a>
+                            <a href="">Contacts</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex justify-center mt-5">
-                    <h1 id="logo" class="text-[2rem] lg:text-7xl font-extrabold text-white "><span>Espac</span><span class="">esis.</span></h1> 
-                </div>
-                <div class="mt-5 relative bottom-3 flex justify-center">
-                    <p class="text-white text-center text-lg"> Copyright &copy; 2024 - Espacesis - designed by <a href="" class="underline">Likeur off</a></p>
+            </div>
+            <div class="lg:w-[80vw] border-t">
+                <div class="flex justify-center mt-4">
+                    <h4>Copyright &copy; 2024 - Present / <a href="" class="underline">Mentions legales</a></h4>
                 </div>
             </div>
         </footer>
     </main>
-
     
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
@@ -274,4 +238,3 @@
     </script>
 </body>
 </html>
-
