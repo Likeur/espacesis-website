@@ -13,7 +13,7 @@
    
     <main class="lg:w-[98vw]">
        
-        <div id="mouse_follow" class="h-2 w-2 fixed bg-gray-950 rounded-full z-50 top-1 left-1"></div>
+        <div id="mouse_follow" class="h-2 w-2 hidden lg:block fixed bg-gray-950 rounded-full z-50 top-3 left-3"></div>
         
         <!-- header section -->
         <header class="lg:h-screen w-full">
@@ -167,8 +167,93 @@
                     
                 </div>
 
-                <div>
+                <div class="mt-8 lg:mt-16 flex justify-center">
+                    <div class="grid gap-4 lg:w-[80vw] lg:gap-6 lg:grid-cols-4">
+                        <div id="card1" class="p-2 h-52 relative hover:cursor-pointer w-48 border rounded-3xl overflow-hidden">
+                            <div id="box-img1" class="h-full w-full">
+                                <img src="./assets/images/mmc.jpg" class="rounded-2xl h-full w-full object-cover" alt="">
+                            </div>
+                            <div class="absolute flex flex-col right-4 top-12 z-40">
+                                <a href="" class="text-lg reseaux1 opacity-0 translate-y-16"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="text-lg reseaux2 opacity-0 translate-y-16"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                            <div id="" class="mt-2 overflow-hidden relative z-10">
+                                <div id="infoBox1" class=" opacity-0 translate-y-16">
+                                    <h2 class="font-medium">Chrinovic MM </h2>
+                                    <p class="text-gray-500 text-sm">Android developer</p>
+                                </div>
 
+                                <div id="infoBox2" class="mt-2 opacity-0 translate-y-16">
+                                    <p class="text-sm">espacesis et gdsc Lead depuis 2023, le boss  de la communauté</p>
+                                </div>
+                            </div>
+                            <button id="plus1" class="absolute hover:scale-90 duration-300 top-4 bg-white h-8 w-8 rounded-full text-2xl right-4 grid place-content-center">+</button>
+                        </div>
+
+                        <div id="card2" class="p-2 h-52 relative hover:cursor-pointer w-48 border rounded-3xl overflow-hidden">
+                            <div id="box-img2" class="h-full w-full">
+                                <img src="./assets/images/likeur.jpg" class="rounded-2xl h-full w-full object-cover" alt="">
+                            </div>
+                            <div class="absolute flex flex-col right-4 top-12 z-40">
+                                <a href="" class="text-lg reseaux3 opacity-0 translate-y-16"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="text-lg reseaux4 opacity-0 translate-y-16"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                            <div id="" class="mt-2 overflow-hidden relative z-10">
+                                <div id="infoBox3" class=" opacity-0 translate-y-16">
+                                    <h2 class="font-medium">Likeur </h2>
+                                    <p class="text-gray-500 text-sm">frontend developer</p>
+                                </div>
+
+                                <div id="infoBox4" class="mt-2 opacity-0 translate-y-16">
+                                    <p class="text-sm">Designer du club, Le gar qui aime foutre le boxon</p>
+                                </div>
+                            </div>
+                            <button id="plus2" class="absolute hover:scale-90 duration-300 top-4 bg-white h-8 w-8 rounded-full text-2xl right-4 grid place-content-center">+</button>
+                        </div>
+
+                        <div id="card3" class="p-2 h-52 relative hover:cursor-pointer w-48 border rounded-3xl overflow-hidden">
+                            <div id="box-img3" class="h-full w-full">
+                                <img src="./assets/images/glo.jpg" class="rounded-2xl h-full w-full object-cover" alt="">
+                            </div>
+                            <div class="absolute flex flex-col right-4 top-12 z-40">
+                                <a href="" class="text-lg reseaux5 opacity-0 translate-y-16"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="text-lg reseaux6 opacity-0 translate-y-16"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                            <div id="" class="mt-2 overflow-hidden relative z-10">
+                                <div id="infoBox5" class=" opacity-0 translate-y-16">
+                                    <h2 class="font-medium">Glodie Lukose </h2>
+                                    <p class="text-gray-500 text-sm">frontend developer</p>
+                                </div>
+
+                                <div id="infoBox6" class="mt-2 opacity-0 translate-y-16">
+                                    <p class="text-sm">Project Manager du club, Le gar qui disparait et réaparait comme par magie</p>
+                                </div>
+                            </div>
+                            <button id="plus3" class="absolute hover:scale-90 duration-300 top-4 bg-white h-8 w-8 rounded-full text-2xl right-4 grid place-content-center">+</button>
+                        </div>
+
+                        <div id="card4" class="p-2 h-52 relative hover:cursor-pointer w-48 border rounded-3xl overflow-hidden">
+                            <div id="box-img4" class="h-full w-full">
+                                <img src="./assets/images/lkanan.jpg" class="rounded-2xl h-full w-full object-cover" alt="">
+                            </div>
+                            <div class="absolute flex flex-col right-4 top-12 z-40">
+                                <a href="" class="text-lg reseaux7 opacity-0 translate-y-16"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="text-lg reseaux8 opacity-0 translate-y-16"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                            <div id="" class="mt-2 overflow-hidden relative z-10">
+                                <div id="infoBox7" class=" opacity-0 translate-y-16">
+                                    <h2 class="font-medium">L Kanan </h2>
+                                    <p class="text-gray-500 text-sm">Backend developer</p>
+                                </div>
+
+                                <div id="infoBox8" class="mt-2 opacity-0 translate-y-16">
+                                    <p class="text-sm">AI & ML lead, Le dark angel du club , l'homme de odoo</p>
+                                </div>
+                            </div>
+                            <button id="plus4" class="absolute hover:scale-90 duration-300 top-4 bg-white h-8 w-8 rounded-full text-2xl right-4 grid place-content-center">+</button>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
