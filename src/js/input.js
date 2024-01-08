@@ -130,6 +130,7 @@ const card1 = document.querySelector('#card1')
 const card2 = document.querySelector('#card2')
 const card3 = document.querySelector('#card3')
 const card4 = document.querySelector('#card4')
+const card5 = document.querySelector('#card5')
 
 // card1
 card1.addEventListener('mouseenter',() => {
@@ -220,6 +221,7 @@ card3.addEventListener('mouseleave',() => {
         width: '100%',
     })
 })
+
 // card 4
 card4.addEventListener('mouseenter',() => {
     gsap.set('#mouse_follow',{
@@ -245,6 +247,36 @@ card4.addEventListener('mouseleave',() => {
         y : '4rem',
         stagger : {amount:0.2},    
     }).to('#box-img4',{
+        height: '100%',
+        width: '100%',
+    })
+})
+
+// card 5
+card5.addEventListener('mouseenter',() => {
+    gsap.set('#mouse_follow',{
+        display: 'none'
+    })
+    tl.to('#box-img5',{
+        height: '4rem',
+        width: '4rem',
+    }).to('#infoBox9, #infoBox10, .reseaux9, .reseaux10', {
+        opacity:1,
+        y : 0,
+        stagger : {amount:0.2},    
+    })
+})
+
+card5.addEventListener('mouseleave',() => {
+    
+    gsap.set('#mouse_follow',{
+        display: 'block'
+    })
+    tl.to('#infoBox9, #infoBox10, .reseaux9, .reseaux10', {
+        opacity:0,
+        y : '4rem',
+        stagger : {amount:0.2},    
+    }).to('#box-img5',{
         height: '100%',
         width: '100%',
     })
